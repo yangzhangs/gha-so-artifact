@@ -8,14 +8,14 @@ Artifact package for our paper "How do Developers Talk about GHA?". This reposit
 	* GitHub data, i.e., issues, using the GitHub Search API
 2. Data for manual classification: `SO post` and `GitHub issue`
 	* This data includes: 
-    	- 6,590 SO posts (Q\_S) with 2,471 accepted SO answers (A\_S)
+    	- 6,590 SO questions (Q\_S) with 2,471 accepted SO answers (A\_S)
     	- 315 GitHub issues (Q\_G) with 217 closed GitHub issues (A\_G)
     * The results of manual classification can be found in `all_post_issue_category.csv`
-    * Data structure: (id, paper_no, type, title, url)
-     	- paper\_no: the number used in this paper. "P1" and "I1" represent the first SO post and the first GitHub issue in our dataset, respectively.
+    * Data structure: (id, type, phase, category)
+     	- id: the number used in this paper. "P1" and "I1" represent the first SO post and the first GitHub issue in our dataset, respectively.
         - type: "github issue" or "so post"
-        - title: the title of a post or an issue
-        - url: url of a post or an issue   
+        - phase: phase of a post or an issue
+        - category: category of a post or an issue   
 3. Data for characteristics analysis
     * The data for characteristics analysis can be found in `so_post_popularity.csv` and `so_post_difficulty.csv`
     * Popularity metrics include:
